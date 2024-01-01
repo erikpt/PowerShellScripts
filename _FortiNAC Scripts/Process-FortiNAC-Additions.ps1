@@ -58,6 +58,7 @@ If ($template -eq $null) {
 #----- Load the CSV into a PowerShell Object so we can work with it
 Write-Host -ForegroundColor Cyan "Loading CSV file $CSVLocalFile into memory for processing"
 $csv = Import-Csv -Path $CSVLocalFile
+#Input CSV file fomat is two columns, "serialno" and "macaddress". This script is intended to add portable computers to the allow list in FortiNAC.
 
 #----- Setup the output CSV log file (the quick and dirty way, no custom PowerShell Objects needed this way
 $outFile = $env:homedrive + $env:HOMEPATH + "\Desktop\NacImportResults_" + [DateTime]::Now.Tostring("yyyyMMdd-HHmmss") + ".csv"
