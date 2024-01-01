@@ -13,7 +13,7 @@ $password="MySecretPassword"
 $serverNameOrIP="10.1.1.1"
 
 #----- The certificate SHA1 thumbprint supplied by the FortiNAC server
-$serverCertThumb="e65529ba505a5b30ad97543d8350f90e993c1566"
+$serverCertThumb="e6552dead05a0030adbeef3d83feed0e99acab66"
 
 #----- The Fortinac Client Role Name to be Assigned to Added Endpoints
 $nacRole="NAC Role Name"
