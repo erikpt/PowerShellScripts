@@ -4,8 +4,8 @@
 #$r=(Get-WmiObject win32_computersystem).rename($t)
 #net helpmsg $r.ReturnValue
 
-$user="isdomain\ecc-migration"
-$pass="migration"
+$user="yourdomain\joinDomainUser"
+$pass="supersecurepassword"
 
 $secpasswd = ConvertTo-SecureString "migration" -AsPlainText -Force
 $mycreds = New-Object System.Management.Automation.PSCredential ("isdomain\ecc-migration", $secpasswd)
